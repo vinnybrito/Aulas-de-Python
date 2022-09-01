@@ -1,7 +1,7 @@
 #
 c = float(input('Digite o valor da cotação do dólar atual: '))
 
-d = float(input('Digite o quantia em dólar desejada: '))
+d = float(input('Digite a quantia em dólar desejada: '))
 
 r = c * d
 

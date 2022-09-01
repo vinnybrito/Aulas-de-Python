@@ -6,6 +6,6 @@ v2 = int(input('Digite o segundo valor: '))
 if (v1 > v2):
     print('O primeiro é o maior.')
 elif (v1 == v2):
-    print('Os valores são iguais.')
+    print('Os valores são idênticos.')
 else:
     print('O segundo é o maior.')
