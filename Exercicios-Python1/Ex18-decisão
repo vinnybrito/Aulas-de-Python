@@ -1,13 +1,19 @@
 #
-n1 = float(input("Digite a primeira nota: "))
+a = float(input("Digite o valor da aceleração (em m/s2): "))
 
-n2 = float(input('Digite a segunda nota: '))
+v0 = float(input('Digite o valor da velocidade inicial (em m/s): '))
 
-m = (n1 + n2) / 2
+t = float(input("Digite o valor do tempo de percurso (t em s): "))
 
-if (m>=8):
-    print("Você é do caralho. Parabéns sua media final é ", m)
-elif (m>5):
-    print("Você quase se fudeu, proxima vez, estuda mais. Sua nota foi", m)
+v = v0 + (a * t)
+
+if (v <=40):
+    print('Veiculo muito lento, a velocidade é:', v)
+elif (v <= 60):
+    print('Velocidade permitida, a velocidade é:', v)
+elif (v <= 80):
+    print('Velocidade de cruzeiro, a velocidade é:', v)
+elif (v <= 120):
+    print('Veiculo muito rápido, a velocidade é:', v)
 else:
-    print("Você se fudeu! Sua média é ", m)
+    print('Veiculo muito rápido, a velocidade é:', v)

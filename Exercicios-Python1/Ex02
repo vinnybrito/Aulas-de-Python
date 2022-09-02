@@ -3,5 +3,5 @@ l = int(input('Digite o valor da aresta do quadrado: '))
 
 a = l * l
 
-print('O área de seu quadrado é: ', a)
+print('A área de seu quadrado é: ', a)
 

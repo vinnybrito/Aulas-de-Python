@@ -9,4 +9,4 @@ n4 = int(input('Digite o quarto valor: '))
 
 m = ( n1 + n2 + n3 + n4 ) / 4
 
-print('A média aritmética de seus quatro valore são: ', m)
+print('A média aritmética de seus quatro valores são: ', m)

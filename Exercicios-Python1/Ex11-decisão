@@ -7,6 +7,5 @@ a = b * h
 
 if (a > 100):
     print('Terreno grande!')
-    print('A área do retângulo é: ', a)
 else:
     print('A área do retângulo é: ', a)
