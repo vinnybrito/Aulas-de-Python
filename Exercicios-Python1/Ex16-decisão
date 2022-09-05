@@ -1,4 +1,4 @@
-#
+
 h = int(input('Digite o valor da Hipotenusa: '))
 
 ca = int(input('Digite o valor do primeiro catato: '))

@@ -1,4 +1,4 @@
-#
+
 peso = float(input("Digite o seu peso em Kg: "))
 
 alt = float(input("Digite a sua altura em metros: "))

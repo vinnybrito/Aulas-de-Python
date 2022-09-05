@@ -1,4 +1,4 @@
-#
+
 p1 = float(input('Digite o valor do primeiro produto: '))
 
 p2 = float(input('Digite o valor do segundo produto: '))
@@ -14,5 +14,3 @@ pg = float(input('Digite o valor do pagamento: '))
 t = pg - (p1 + p2 + p3 + p4 + p5)
 
 print('O valor do troco a ser devolvido é: ', t)
-
-

@@ -1,5 +1,5 @@
-#
-b = int(input('Digito o valor da base do retângulo: '))
+
+b = int(input('Digite o valor da base do retângulo: '))
 
 h = int(input('Digite o valor da altura do retângulo: '))
 
@@ -9,3 +9,4 @@ if (a > 100):
     print('Terreno grande!')
 else:
     print('A área do retângulo é: ', a)
+    
