@@ -1,5 +1,5 @@
 
-n = int(input('Digite um valor: '))
+n = int(input('Digite um valor qualquer: '))
 
 if (n < 0):
     r = n * 3

@@ -1,5 +1,5 @@
 
-n = int(input("Digite o valor: "))
+n = int(input("Digite um valor qualquer: "))
 
 r = n % 2
 

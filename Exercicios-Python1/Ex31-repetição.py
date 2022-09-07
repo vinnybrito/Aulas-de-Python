@@ -1,8 +1,8 @@
 
-v1 = int(input("Digite o primeiro valor: "))
+v1 = int(input("Digite um número positivo: "))
 
 while (v1 <= 0 ):
-    print("Não pode número negativo!")
-    v1 = int(input("Digite o primeiro valor: "))
+    print("Números negativos não são permitidos!")
+    v1 = int(input("Por favor, digite novamente: "))
 
-print("Esse valor é positivo")
+print("Obrigado.")
