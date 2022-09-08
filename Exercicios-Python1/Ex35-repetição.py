@@ -14,3 +14,4 @@ while (i < 11):
     r = v * i 
     print(f'{v} X {i} = {r}')
     i = i + 1
+    
