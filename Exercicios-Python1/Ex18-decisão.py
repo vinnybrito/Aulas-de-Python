@@ -1,9 +1,9 @@
 
-a = float(input("Digite o valor da aceleração (em m/s2): "))
+a = float(input('Digite o valor da aceleração (em m/s2): '))
 
 v0 = float(input('Digite o valor da velocidade inicial (em m/s): '))
 
-t = float(input("Digite o valor do tempo de percurso (t em s): "))
+t = float(input('Digite o valor do tempo de percurso (t em s): '))
 
 v = v0 + (a * t)
 

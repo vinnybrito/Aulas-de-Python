@@ -1,6 +1,4 @@
 
-print('Para realizar a tabuada, precisamos que')
-
 x = int(input('Digite o valor a ser multiplicado: '))
 
 while (x < 0):
@@ -18,3 +16,4 @@ while (b >= a):
     r = x * b
     print(f'{x} X {b} = {r}')
     b = b - 1
+    

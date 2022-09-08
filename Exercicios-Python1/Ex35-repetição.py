@@ -1,7 +1,4 @@
 
-from re import I
-
-
 v = int(input('Digite um valor qualquer: '))
 
 while (v < 0):
@@ -14,4 +11,3 @@ while (i < 11):
     r = v * i 
     print(f'{v} X {i} = {r}')
     i = i + 1
-    

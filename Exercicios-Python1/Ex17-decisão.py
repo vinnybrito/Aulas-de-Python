@@ -1,9 +1,9 @@
 
-peso = float(input("Digite o seu peso em Kg: "))
+peso = float(input('Digite o seu peso em Kg: '))
 
-alt = float(input("Digite a sua altura em metros: "))
+alt = float(input('Digite a sua altura em metros: '))
 
-sex = input("Insira o seu sexo (Masculino = m / Feminino = f): ")
+sex = input('Insira o seu sexo (Masculino = m / Feminino = f): ')
 
 imc = peso / (alt* alt)
 
@@ -16,8 +16,8 @@ if (sex == 'm'):
         print('Acima do peso')
 else:
     if (imc < 19 ):
-        print("Abaixo do peso.")
+        print('Abaixo do peso.')
     elif (imc < 24):
-        print("Peso ideal.")
+        print('Peso ideal.')
     else:
         print('Acima do peso.')
