@@ -16,4 +16,3 @@ while (b >= a):
     r = x * b
     print(f'{x} X {b} = {r}')
     b = b - 1
-    

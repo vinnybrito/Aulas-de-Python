@@ -1,5 +1,5 @@
 
-v = int(input('Digite um valor qualquer: '))
+v = int(input('Digite o valor que será multiplicado: '))
 
 while (v < 0):
     print('Números negativos não são permitidos!')

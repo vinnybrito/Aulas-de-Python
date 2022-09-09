@@ -15,7 +15,7 @@ if (sex == 'm'):
     else:
         print('Acima do peso')
 else:
-    if (imc < 19 ):
+    if (imc < 19):
         print('Abaixo do peso.')
     elif (imc < 24):
         print('Peso ideal.')

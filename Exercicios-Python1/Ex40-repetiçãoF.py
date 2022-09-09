@@ -1,5 +1,4 @@
 
-v = 20
 n1 = 1
 n2 = 1
 n3 = 1
@@ -9,7 +8,7 @@ print(f'1 : {n1}')
 print(f'2 : {n2}')
 print(f'3 : {n3}')
 
-for n4 in range (1, 21):
+for n4 in range (4, 21):
     a = n1 + n2 + n3
     print(f'{n4} : {a}')
     n1 = n2

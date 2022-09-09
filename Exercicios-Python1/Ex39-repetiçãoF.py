@@ -1,15 +1,14 @@
 
-v = 30
-n1 = 1
+n = 1
+n1 = 0
 n2 = 1
-n3 = 3
+n3 = 2
 
-print(f'1 : {n1}')
-print(f'2 : {n2}')
+print(f'1 : {n}')
 
-for n3 in range(1, 31):
+for n3 in range(2, 31):
     a = n1 + n2
-    print(f'{n2} : {a}')
+    print(f'{n3} : {a}')
     n1 = n2
     n2 = a
     n3 = n3 + 1
