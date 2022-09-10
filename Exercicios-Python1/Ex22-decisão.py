@@ -26,6 +26,6 @@ elif (menu == "4"):
     a = 3.14 * (r * r)
     print("O valor aproximado da área do círculo é: ", a)
 elif (menu == "5"):
-    print("Fim do processo.")
+    exit("Fim do processo.")
 else:
     print("Não foi possivel idêntificar sua escolha.")

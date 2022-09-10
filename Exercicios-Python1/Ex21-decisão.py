@@ -12,8 +12,11 @@ elif (menu == "2"):
     r = v1 + v2
     print('A soma dos dois valores correspondem á', r)
 elif (menu == "3"):
-    r = v1 / v2
-    print('A divisão dos dois valores correspondem á', r)
+    if (v2 == 0):
+        print('Infelismente, não é possível fazer a divisão.')
+    else:
+        r = v1 / v2
+        print('A divisão dos dois valores correspondem á', r)
 elif (menu == "4"):
     r = v1 - v2
     print('A subtração dos dois valores correspondem á', r)

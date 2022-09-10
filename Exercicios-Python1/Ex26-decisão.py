@@ -1,7 +1,9 @@
 
 n = int(input('Digite um valor qualquer: '))
 
-if (n < 0):
+r = n % 2
+
+if (r == 1):
     r = n * 3
     print('O valor digitado é um número negativo. O triplo de tal valor corresponde á', r)
 else:

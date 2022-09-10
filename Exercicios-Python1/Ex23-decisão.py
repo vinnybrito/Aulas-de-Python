@@ -6,6 +6,6 @@ b = int(input('Digite o segundo valor: '))
 c = int(input('Digite o terceiro valor: '))
 
 if (a + b < c):
-    print('A soma dos dois primeiros números é menor que o terceiro.')
+    print(f'A soma dos dois primeiros números é menor que {c}.')
 else:
-    print('A soma dos dois primeiros números é maior que o terceiro.')
+    print(f'A soma dos dois primeiros números é maior que {c}.')

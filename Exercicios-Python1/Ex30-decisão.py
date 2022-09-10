@@ -12,7 +12,8 @@ elif (fp == '2'):
 elif (fp == '3'):
     print(f'Produto sem desconto. O produto custará {p} reais. ')
 elif (fp == "4"):
-    d = p / (4 * 0.10)
-    print(f'Produto com juros de 10%. A cada parcela, será cobrado o valor de {d} reais.')
+    d = (p * 0.10)
+    j = d * 4 + p
+    print(f'Produto com juros de 10%. A cada parcela, será cobrado o valor de {d} reais. O valor total a ser pago será de {j} reais.')
 else:
     print('Não foi possivel idêntificar a forma de pagamento.')
