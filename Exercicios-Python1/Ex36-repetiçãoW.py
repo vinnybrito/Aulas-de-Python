@@ -1,4 +1,3 @@
-
 x = int(input('Digite o valor a ser multiplicado: '))
 
 while (x < 0):

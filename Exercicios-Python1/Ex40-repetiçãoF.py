@@ -1,17 +1,10 @@
+a = 1
+b = 1
+c = 1
 
-n1 = 1
-n2 = 1
-n3 = 1
-n4 = 3
-
-print(f'1 : {n1}')
-print(f'2 : {n2}')
-print(f'3 : {n3}')
-
-for n4 in range (4, 21):
-    a = n1 + n2 + n3
-    print(f'{n4} : {a}')
-    n1 = n2
-    n2 = n3
-    n3 = a
-    n4 = n4 + 1
+for i in range(1, 21, 1):
+    print(a)
+    s = b + a + c
+    a = b
+    b = c
+    c = s 

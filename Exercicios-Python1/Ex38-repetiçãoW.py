@@ -1,12 +1,6 @@
-
-v = int(input('Digite um valor positivo para ser somado: '))
-
-while (v < 0):
-    v = int(input('Valores negativos não são permitido.\nDigite novamente: '))
-
+t = 0
 i = 1
-
 while (i <= 100):
-    r = v + i 
-    print(f'{v} + {i} = {r}')
-    i = i + 1
+     t = t + i
+     i = i + 1
+print('A soma de 1 a 100 é: ', t)

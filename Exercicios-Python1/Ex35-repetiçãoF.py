@@ -1,12 +1,10 @@
+n = int(input('Digite o valor a ser multiplicado: '))
 
-v = int(input('Digite o valor que será multiplicado: '))
-
-while (v < 0):
-    print('Números negativos não são permitidos!')
-    v = int(input('Por favor, digite novamente: '))
+while (n < 0):
+    n = int(input('Valores negativos não são permitidos.\nDigite novamente: '))
 
 i = 1
 
 for i in range(1, 11, 1):
-    r = v * i
-    print(f'{v} X {i} = {r}')
+    r = n * i 
+    print(f'{n} X {i} = {r}')

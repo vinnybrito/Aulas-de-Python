@@ -1,7 +1,5 @@
 for i in range(1, 21, 1):
-    for j in range(1, 11, 1):
-        t = i * j
-        print (i, 'X', j, '=', t)
+    for n in range(1, 11, 1):
+        r = i * n
+        print(f'{i} X {n} = {r}')
     a = input('Digite qualquer tecla para continuar...')
-    print('')
-    

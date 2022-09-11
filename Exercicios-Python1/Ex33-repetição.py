@@ -1,8 +1,5 @@
+sex = input('Insira o seu sexo (Masculino = m / Feminino = f): ')
 
-sex = input("Insira o seu sexo (Masculino = m / Feminino = f): ")
-
-while (sex != ("m")) and (sex != ("f")):
-    print("Sexo não identificado.")
-    sex = input("Insira o sexo novamente: ")
-
-print("Obrigado.")
+while (sex != "m") and (sex != "f"):
+    sex = input('Sexo invalido. Insira novamente: ')
+print('Obrigado!')

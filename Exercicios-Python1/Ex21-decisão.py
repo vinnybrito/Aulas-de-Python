@@ -13,7 +13,7 @@ elif (menu == "2"):
     print('A soma dos dois valores correspondem á', r)
 elif (menu == "3"):
     if (v2 == 0):
-        print('Infelismente, não é possível fazer a divisão.')
+        print('Não é possível realizar a divisão com um denominador 0.')
     else:
         r = v1 / v2
         print('A divisão dos dois valores correspondem á', r)
