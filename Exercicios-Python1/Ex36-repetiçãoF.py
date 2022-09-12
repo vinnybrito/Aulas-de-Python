@@ -13,4 +13,4 @@ while (a > b):
 
 for i in range(b, a-1, -1):
     r = x * i
-    print(f'{x} X {i} = {r}')
+    print(f'{x} X {i} = {r}') 

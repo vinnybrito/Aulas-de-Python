@@ -1,17 +1,22 @@
 
 soma = 0
+i = 1
 
-for i in range(1, 5, 1):
+while (i <= 5):
     numero = int(input('digite um numero: '))
 
     if(i == 1):
         maior = numero
+        i = i + 1
     elif(numero > maior):
         maior = numero
+        i = i + 1
     if(i == 1):
         menor = numero
+        i = i + 1
     elif(numero < menor):
         menor = numero
+        i = i + 1
 
     
     soma = soma + numero
