@@ -1,18 +1,20 @@
-soma = 0
+s = 0
 i = 1
+
 while (i <= 10):
-    numero = int(input('digite um numero: '))
-    if(i == 1):
-        maior = numero
+    n = int(input('Digite um valor: '))
+
+    if (i == 1):
+        m = n
         i = i + 1
-    elif(numero > maior):
-        maior = numero
+    elif(n > m):
         i = i + 1
+        m = n
 
-    soma = soma + numero
+    s = s + n
 
-media = soma / 10
+md = s / 10
 
-print('o maior é: ', maior)
-print('soma é: ', soma)
-print('a media é: ', media)
+print('O maior valor é ', m)
+print('A soma é ', s)
+print('A média é ', md)

@@ -1,15 +1,17 @@
-for i in range(1, 10, 1):
-    numero = int(input('digite um numero: '))
+s = 0
 
-    if(i == 1):
-        maior = numero
-    elif(numero > maior):
-        maior = numero
+for i in range(1, 11, 1):
+    n = int(input('Digite um valor: '))
 
-    soma = soma + numero
+    if (i == 1):
+        m = n
+    elif(n > m):
+        m = n
 
-media = soma / 10
+    s = s + n
 
-print('o maior é: ', maior)
-print('soma é: ', soma)
-print('a media é: ', media)
+md = s / 10
+
+print('O maior valor é ', m)
+print('A soma é ', s)
+print('A média é ', md)
