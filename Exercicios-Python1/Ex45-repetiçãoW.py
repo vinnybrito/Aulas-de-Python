@@ -12,34 +12,28 @@ while (n < 0) or (n > 20):
 while(i <= n):
     v = int(input('Digite os valores: '))
 
-    #Exibir o maior deles.
     if (i == 1):
         ma = v
     elif(v > ma):
         ma = v
 
-    #Exibir o menor deles.
     if (i == 1):
         me = v
     elif(v < me):
         me = v
 
-    #Porcentagem dos valores positivos.
     if(v > 0):
         p = p + 1
         x = (p * 100) / n
 
-    #Porcentagem dos valores negativos.
     if(v < 0):
         p2 = p2 + 1
     x2 = (p2 * 100) / n
 
     i = i + 1
 
-    #A soma de todos os valores.
     s = s + v
 
-#A média aritmética dos valores.
 md = s / n
  
 print ('1- O maior valor é: ', ma)
