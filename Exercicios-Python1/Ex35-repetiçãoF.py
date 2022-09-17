@@ -1,3 +1,4 @@
+
 n = int(input('Digite o valor a ser multiplicado: '))
 
 while (n < 0):

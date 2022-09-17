@@ -1,3 +1,4 @@
+
 b = int(input('Digite o valor da base do triângulo: '))
 
 h = int(input('Digite o valor da altura do triângulo: '))

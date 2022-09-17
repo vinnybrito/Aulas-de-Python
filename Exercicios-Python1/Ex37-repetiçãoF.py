@@ -1,3 +1,4 @@
+
 for i in range(1, 21, 1):
     for n in range(1, 11, 1):
         r = i * n

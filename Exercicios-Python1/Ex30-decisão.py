@@ -1,3 +1,4 @@
+
 p = float(input('Digite o valor do produto: '))
 
 fp = input(' 1- Dinheiro ou Cheque\n 2- Cartão de crédito\n 3- Duas parcelas\n 4- Quatro parcelas\n Insira a forma de pagamento: ')

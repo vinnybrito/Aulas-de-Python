@@ -1,3 +1,4 @@
+
 v1 = int(input('Digite um valor positivo: '))
 
 while (v1 < 0):

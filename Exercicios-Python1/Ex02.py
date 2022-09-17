@@ -1,3 +1,4 @@
+
 l = int(input('Digite o valor da aresta do quadrado: '))
 
 a = l * l

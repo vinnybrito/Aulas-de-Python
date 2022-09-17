@@ -1,3 +1,4 @@
+
 sex = input('Insira o seu sexo (Masculino = m / Feminino = f): ')
 
 while (sex != "m") and (sex != "f"):
