@@ -1,6 +1,6 @@
+
 n = int(input('Digite um valor qualquer: '))
 t = n + 20
-
 i = n
 
 while(n < t):

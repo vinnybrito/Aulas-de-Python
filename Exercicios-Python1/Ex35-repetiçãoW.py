@@ -9,4 +9,4 @@ i = 1
 while (i <= 10):
     r = v * i 
     print(f'{v} X {i} = {r}')
-    i = i + 1
+    i += 1
