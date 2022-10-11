@@ -1,10 +1,10 @@
+# 51- Armazenar dez números na memória do computador. Exibir os valores na ordem inversa à da digitação.
 
-num = []
+n = [] #Declarar um Array;
 
-for i in range(0, 10, 1):
-    num.append(int(input('Digite um valor: ')))
+for i in range(0, 4, 1): #Enquanto "i" estiver no intervalo de 0 á 10...
+    n.append(int(input("Digite um valor: ")))
+    #O código vai se repitir 10 vezes e armazenar o valor digitado no Array;
 
-print('Os números que você digitou foram: ')
-
-for i in range(9, -1, -1):
-    print(num[i])
+for i in range(3, -1, -1):
+    print(n[i])

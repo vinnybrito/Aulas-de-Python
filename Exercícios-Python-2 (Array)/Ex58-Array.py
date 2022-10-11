@@ -1,31 +1,27 @@
+# 58- Armazenar o nome, sexo e idade de cem pessoas. Consistir as entradas no sentido de aceitar apenas “F” ou “M” para o sexo e valores positivos para a idade. Após a digitação, exibir os dados (nome, sexo e idade) de todas as pessoas com idade superior a dezoito anos. Ao final da lista, exibir a quantidade de pessoas listadas.
 
 nome = []
 sexo = []
 idade = []
 
-for i in range(0, 2, 1):
-    nome.append(input('Insira o seu nome: '))
-    s = input('Insira o seu sexo: ')
+for i in range(0, 3, 1):
+    nome.append(input("Digite seu nome: "))
 
-    while (s != "f" and s != "m"):
-       s = input('Insira o seu sexo: ')
-    sexo.append(s)
+    sex = input("Digite o seu sexo: ")
+    while ((sex != "f") and (sex != "m")):
+        sex = input("Digite o seu sexo: ")
+    sexo.append(sex)
 
-    age = int(input('Digite sua idade: '))
+    anos = int(input("Digite sua idade: "))
+    while (anos <= 0):
+        anos = int(input("Digite sua idade: "))
+    idade.append(anos)
 
-    while (age < 0):
-        age = int(input('Digite sua idade: '))
-    idade.append(age)
+j = 0
 
-l = 0
+for i in range(0, 3, 1):
+    if(idade[i] >= 18):
+        print(f"Nome: {nome[i]}, Sexo: {sexo[i]}, Idade: {idade[i]}")
+        j = j + 1
 
-for i in range(0, 2, 1):
-    if (idade[i] >= 18):
-        print(nome[i])
-        print(sexo[i])
-        print(idade[i])
-        l = l + 1
-
-print("Número de pessoas que mais de 18 anos: ", l)
-
-
+print(j)

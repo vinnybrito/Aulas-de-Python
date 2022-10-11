@@ -1,11 +1,12 @@
+#56- Armazenar o nome e idade de cem pessoas. Após a digitação, exibir os dados (nome e idade) de todas as pessoas.
 
 nome = []
 idade = []
 
-for i in range(0, 2, 1):
-    nome.append(input("Insira o seu nome: "))
-    idade.append(input("Insira a sua idade: "))
+for i in range(0, 3, 1):
+    nome.append(input("Insira o nome: "))
 
-for i in range(0, 2, 1):
-    print(nome[i])
-    print(idade[i])
+    idade.append(int(input("Digite a idade: ")))
+
+for i in range(0, 3, 1):
+    print(f"{nome[i]} tem {idade[i]} anos.")

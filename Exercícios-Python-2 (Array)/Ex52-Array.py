@@ -1,13 +1,1 @@
-
-n = []
-
-for i in range(0, 10, 1):
-    n.append(int(input('Digite um valor: ')))
-
-m = n[0]
-
-for i in range(0, 10, 1):
-    if (n[i] > m):
-        m = n[i]
-
-print('O maior número do Array é: ', m)
+# 52- Armazenar dez valores na memória do computador. Após a digitação dos valores, criar uma rotina para ler os valores e achar e exibir o maior deles.

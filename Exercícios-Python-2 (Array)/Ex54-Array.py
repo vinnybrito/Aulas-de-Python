@@ -1,18 +1,13 @@
-#popular um array significa colocar uma coisa lá
-#varrer significa percorrer o array
+# 54- Armazenar vinte valores na memória. Após a digitação, entrar com uma constante multiplicativa que deverá multiplicar cada um dos valores do vetor e armazenar o resultado em outro vetor, porém em posições equivalentes. Exibir os vetores na tela.
 
 n = []
-c = []
+resultado = []
 
-for i in range(1, 4, 1):
-    n.append(int(input(f'Digite o {i} valor: ')))
+for i in range(0, 5, 1):
+    n.append(int(input("Digite um valor: ")))
 
-const = int(input('Digite o valor da constante: '))
+constante = int(input("Digite um valor que multiplicará os valores anteriores: "))
 
-for i in range(1, 4, 1):
-    c.append(const * n[i])
-    print(n[i])
-
-print('Os vetores são: ')
-for i in range(1, 4, 1):
-    print(c[i])
+for i in range(0, 5, 1):
+    resultado.append(n[i] * constante)
+    print(resultado[i])

@@ -1,11 +1,12 @@
+# 53- Armazenar vinte valores em um vetor. Após a digitação, entrar com uma constante multiplicativa que deverá multiplicar cada um dos valores do vetor e armazenar o resultado no próprio vetor, na respectiva posição.
 
 n = []
 
-for i in range(1, 21, 1):
-    n.append(int(input(f'Digite o {i} valor: ')))
+for i in range(0, 5, 1):
+    n.append(int(input("Digite um valor: ")))
 
-const = int(input('Digite o valor a ser multiplicado: '))
+constante = int(input("Digite um valor que multiplicará os anteriores: "))
 
-for i in range(0, 20, 1):
-    n[i] = n[i] * const
+for i in range(0, 5, 1):
+    n[i] = n[i] * constante
     print(n[i])
