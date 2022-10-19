@@ -1,3 +1,4 @@
+# 9- Entrar via teclado, com dois valores distintos. Exibir o menor deles.
 
 v1 = int(input('Digite o primeiro valor: '))
 

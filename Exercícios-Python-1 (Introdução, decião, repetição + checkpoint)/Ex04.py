@@ -1,3 +1,4 @@
+# 4- Calcular e exibir a média aritmética de quatro valores quaisquer que serão digitados.
 
 n1 = int(input('Digite o primeiro valor: '))
 

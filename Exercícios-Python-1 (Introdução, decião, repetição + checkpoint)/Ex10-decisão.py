@@ -1,3 +1,4 @@
+# 10 Entrar com dois valores quaisquer. Exibir o maior deles, se existir, caso contrário, enviar mensagem avisando que os números são idênticos.
 
 v1 = int(input('Digite o primeiro valor: '))
 

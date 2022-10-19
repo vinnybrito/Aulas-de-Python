@@ -1,3 +1,4 @@
+# 3- A partir dos valores da base e altura de um triângulo, calcular e exibir sua área.
 
 b = int(input('Digite o valor da base do triângulo: '))
 

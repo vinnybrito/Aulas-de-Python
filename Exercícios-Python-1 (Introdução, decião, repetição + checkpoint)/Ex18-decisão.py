@@ -1,3 +1,8 @@
+# 18- Criar um programa para analisar a velocidade de um automóvel. Solicitar via 
+# teclado os valores da aceleração (a em m/s2), velocidade inicial (v0 em m/s) e o 
+# tempo de percurso (t em s).Calcular e exibir avelocidade final do automóvelem km/h. 
+# E exibir mensagem de acordo com a tabela abaixo:
+# Fórmula para o cálculo da velocidade em m/s: V = v0 + a. t
 
 a = float(input('Digite o valor da aceleração (em m/s2): '))
 
