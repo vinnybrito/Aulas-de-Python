@@ -1,3 +1,5 @@
+# 25. Faça um algoritmo para receber um número qualquer e informar na tela se é par 
+# ou ímpar. Utilize o operador %
 
 n = int(input("Digite um valor qualquer: "))
 

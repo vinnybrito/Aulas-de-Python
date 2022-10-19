@@ -1,3 +1,5 @@
+# 28. Escreva um algoritmo que leia três valores inteiros e diferentes e mostre-os em 
+# ordem crescente.
 
 n1 = int(input('Digite o primeiro valor: '))
 

@@ -1,3 +1,15 @@
+# 22. Exibir o seguinte seletor de opções e em função de uma escolha, solicitar os 
+# dados necessários para o cálculo da respectiva área. Enviar mensagem de erro se o 
+# usuário escolher uma opção inexistente.
+
+# Encerrar o programa somente quando selecionada a opção de finalização. (Fazer esse 
+# exercício utilizando If..Else e/ou Case)
+
+# 1 – Triângulo
+# 2 – Quadrado
+# 3 – Retângulo
+# 4 – Círculo
+# 5 – Fim de processo
 
 menu = input(" 1– Triângulo \n 2– Quadrado \n 3– Retângulo \n 4– Círculo \n 5– Fim de processo \n Selecione uma das opções: ")
 

@@ -1,3 +1,5 @@
+# 32. Entrar com dois valores via teclado, onde o segundo deverá ser maior que o 
+# primeiro. Caso contrário solicitar novamente apenas o segundo valor.
 
 v1 = int(input('Digite o primeiro valor: '))
 
