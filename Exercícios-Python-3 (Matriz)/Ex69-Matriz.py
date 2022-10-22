@@ -9,13 +9,18 @@ matriz2 = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 
 for l in range(0, 3, 1):
     for c in range(0, 4, 1):
-        matriz[l][c] = int(input('Digite um numero: '))
+        matriz[l][c] = int(input('Digite um número: '))
 
 constante = int(input("Digite o valor a ser multiplicado: "))
 
 for l in range(0, 3, 1):
     for c in range(0, 4, 1):
-        matriz2.append(matriz[l][c] * constante)
+        matriz2[l][c] = matriz[l][c] * constante
 
+print('\nPrimeira Matriz:')
+for i in range(0, 3, 1):
+    print(matriz2[i])
+
+print('\nSegunda Matriz:')
 for i in range(0, 3, 1):
     print(matriz2[i])
