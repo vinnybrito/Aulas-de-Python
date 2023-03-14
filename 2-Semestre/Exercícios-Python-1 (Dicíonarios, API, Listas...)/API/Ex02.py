@@ -5,16 +5,15 @@
 
 import requests
 
-github = input('Digite seu nome de usuário do Github: ')
+print('<<----PERFIL GITHUB---->>')
+
+github = input("\nDigite o login do GitHub: ")
 url = f"https://api.github.com/users/{github}"
 
 response = requests.get(url)
 
 if response.status_code == 200:
-    dados = response.json()
-    
-    print(f"\nNome: {dados['name']}")
-    print(f"Repositórios: {dados['public_repos']}")
-    print(f"Seguidores: {dados['followers']}")
+    dados = response.json()   
+    print(f"\nNome: {dados['name']} | Repositórios: {dados['public_repos']} | Seguidores: {dados['followers']}")
 else:
-    print("Usuário não encontrado.")
+    print("Perfil não encontrado.")

@@ -4,21 +4,26 @@
 
 import requests
 
-listaPessoas = []
+clientes = []
 
-while True:
+while True: 
+    print('\n<<----CADASTRO DE CLIENTES---->>')
 
-    print('\n//---------Cadastro de Pessoas---------//')
-    print('\nEscolha uma opção: \n1- Incluir \n2- Alterar \n3- Excluir \n4- Consultar \n5- Sair')
+    print('\nEscolha uma opção: ')
+    print('1- Incluir')
+    print('2- Alterar')
+    print('3- Excluir')
+    print('4- Consultar')
+    print('5- Sair')
 
-    opcao = int(input('\nOpção desejada: '))
+    opcao = int(input('Opção desejada: '))
 
     if (opcao == 1):
 
-        id = listaPessoas.__len__() + 1
+        id = clientes.__len__() + 1
         nome = input('\nDigite o seu nome: ')
-        email = input('Digite o seu E-mail: ')
-        cep = input('Digite seu CEP: ')
+        email = input('Digite seu E-mail: ')
+        cep = input('Digite o seu CEP: ')
 
         url = f"https://viacep.com.br/ws/{cep}/json/"
         response = requests.get(url)
@@ -34,39 +39,38 @@ while True:
             numero = input('Número da casa: ')
             complemento = input('Complemento: ')
 
-            pessoa = {"id": id, "nome": nome, "email": email, "logradouro": rua, "bairro": bairro, "localidade": localidade, "uf": uf, "numero": numero, "complemento": complemento }
+            pessoa = {'id': id, 'nome': nome, 'email': email, 'cep': cep, 'rua': rua, 'bairro': bairro, 'localidade': localidade, 'cidade': uf, 'numero': numero, 'complemento': complemento}
 
-            listaPessoas.append(pessoa)
+            clientes.append(pessoa)
 
-            print('Pessoa cadastrada com sucesso!')
-        else:
-            print("CEP não encontrado.")
+            print('\nPessoa cadastrada com sucesso!')
     elif (opcao == 2):
-        for pessoa in listaPessoas:
-            print(f"\n\nId: {pessoa['id']} \nNome: {pessoa['nome']} \nEndereço: {pessoa['logradouro']}\n\n")
+        for pessoa in clientes:      
+            print(f"ID: {pessoa['id']} | Nome: {pessoa['nome']}")
 
         idPessoa = int(input('Digite o id da pessoa que deseja atualizar: '))
         nome = input('Digite o novo nome: ')
         email = input('Digite o novo email: ')
 
-        for pessoa in listaPessoas:
+        for pessoa in clientes:
             if (pessoa['id'] == idPessoa):
                 pessoa.update({'nome': nome})
                 pessoa.update({'email': email})
-
-        print('Pessoa atualizada com sucesso!')
     elif (opcao == 3):
-        for pessoa in listaPessoas:
-            print(f"\n\nId: {pessoa['id']} \nNome: {pessoa['nome']} \nEndereço: {pessoa['logradouro']}\n\n")
+        for pessoa in clientes:      
+            print(f"ID: {pessoa['id']} | Nome: {pessoa['nome']}")
+        
+        idPessoa = int(input('Digite o id da pessoa que deseja excluir: '))
 
-        idPessoa = int(input('Digite o id da pessoa que deseja atualizar: '))
-
-        for pessoa in listaPessoas:
+        for pessoa in clientes:
             if (pessoa['id'] == idPessoa):
-                listaPessoas.remove(pessoa)
-    elif (opcao == 4):     
-        for pessoa in listaPessoas:
-            print(f"\n\nId: {pessoa['id']} \nNome: {pessoa['nome']} \nEndereço: {pessoa['logradouro']}\n\n")
-    elif (opcao == 5):
+                clientes.remove(pessoa)  
+    elif (opcao == 4):
+        print("\n<<----CLIENTES CADASTRADOS---->>")
+
+        for pessoa in clientes:
+            print(f"\nID: {pessoa['id']} | Nome: {pessoa['nome']} | Rua: {pessoa['rua']} | Cidade: {pessoa['cidade']}")
+    else:
         break
-print("\nSistema de cadastro encerrado. Tchau!")
+
+print("\nFim do programa!")

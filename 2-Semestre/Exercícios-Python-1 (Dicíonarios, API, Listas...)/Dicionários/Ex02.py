@@ -5,38 +5,33 @@
 
 produtos = []
 
-while True:
-    print('\n<<------Cadastro de Produtos------>>')
-    print('Digite os dados do produto: ')
+while True: 
+    print('<<----CADASTRO DE PRODUTOS---->>')
 
-    nome = input('\nProduto: ')
+    produto = input('\nProduto: ')
     preco = float(input('Preço: '))
     quantidade = int(input('Quantidade: '))
 
-    resposta = input('\nO produto cadastrado é comercializado em lojas? (S/N) ')
+    resposta = input('\nO produto é comercializado? (S/N): ')
 
-    if (resposta.upper() == 'S'):
-        loja = input('Nome da Loja: ')
+    if (resposta.upper() == "S"):
+        loja = input('\nLoja: ')
         cidade = input('Cidade: ')
+        comercio = {'loja': loja, 'cidade': cidade}
 
-        estabelecimento = {'loja': loja, 'cidade': cidade} 
-        print('\nProduto Cadastrado com Sucesso!')
-    else:
-        estabelecimento = {}
-        print('\nProduto Cadastrado com Sucesso!')
-    
-    dado = {'nome': nome, 'preco': preco, 'quantidade': quantidade, 'estabelecimento': estabelecimento}
+    mercadoria = {'produto': produto, 'preco': preco, 'quantidade': quantidade, 'comercio': comercio}
 
-    produtos.append(dado)
+    produtos.append(mercadoria)
 
-    continuar = input("\nDeseja continuar? (S/N) ")
-    if continuar.upper() == "N":
+    continuar = input('\nDeseja continuar? (S/N) ')
+
+    if (continuar.upper() == "N"):
         break
 
-for dado in produtos:
-    print(f"\nProduto: {dado['nome']} | Preço: {dado['preco']} | Quantidade: {dado['quantidade']} ")
+print('\n<<----PRODUTOS CADASTRADOS---->>')
 
-    if (estabelecimento):
-        print(f"Loja: {estabelecimento['loja']} | Cidade: {estabelecimento['cidade']} ")
-    else:
-        print('Produto não é comercializado em outros estabelecimentos.')
+for mercadoria in produtos:
+    print(f"\nProduto: {mercadoria['produto']} | Preço: {mercadoria['preco']} | Quantidade: {mercadoria['quantidade']}")
+    
+    if (comercio):
+        print(f"Loja: {comercio['loja']} | Cidade: {comercio['cidade']}")

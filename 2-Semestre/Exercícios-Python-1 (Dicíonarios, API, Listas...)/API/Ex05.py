@@ -18,4 +18,5 @@ if response.status_code == 200:
         print('Dominio disponível')
     else:
         dataFormatada = dados['expires-at'][8:10] + "/" + dados['expires-at'][5:7] + "/" + dados['expires-at'][0:4]
+        
         print('Domínio indisponível! Expira em: ' + dataFormatada)

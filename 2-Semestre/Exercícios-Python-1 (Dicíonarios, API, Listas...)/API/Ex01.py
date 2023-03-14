@@ -4,14 +4,16 @@
 
 import requests
 
-cep = input("Digite o CEP desejado: ")
+print('\n<<----SERVIÇO CEP---->>')
+
+cep = input("\nDigite o CEP desejado: ")
 url = f"https://viacep.com.br/ws/{cep}/json/"
 
 response = requests.get(url)
 
 if response.status_code == 200:
-    dados = response.json()
-    print(f"Logradouro: {dados['logradouro']}")
+    dados = response.json()   
+    print(f"\nLogradouro: {dados['logradouro']}")
     print(f"Bairro: {dados['bairro']}")
     print(f"Cidade: {dados['localidade']}")
 else:

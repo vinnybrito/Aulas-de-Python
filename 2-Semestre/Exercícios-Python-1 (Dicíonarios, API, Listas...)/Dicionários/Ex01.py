@@ -4,44 +4,41 @@
 # número). Ao final, exibir todos os clientes e suas respectivas contas bancárias, 
 # se houver.
 
-cliente = [] # Criamos uma lista, que será responsavel por armazenar os dicionários
+cliente = []
 
-while True: # "Enquanto for verdade" - será realizado um looping infinito.
-    print('\n<<------Cadastro de Úsuarios------>>')
-    print('Por favor, digite os seus dados: ')
-    nome = input('\nNome: ')
-    idade = int(input('Idade: '))
-    profissao = input('Profissão: ')
-    salario = float(input('Salário: '))
+while True:
+    print('\n<<----CADASTRO DE CLIENTES---->>')
 
-    conta = input('\nPossui conta bancária? (S/N) ')
-    
-    if (conta.upper() == "S"):
-        banco = input('\nBanco: ')
-        agencia = input('Agência: ')
-        numero = input('Número: ')
+    nome = input('\nDigite seu nome: ')
+    idade = int(input('Digite sua idade: '))
+    profissao = input('Digite sua profissão: ')
+    salario = float(input('Digite seu salario: '))
 
-        contabancaria = {'banco': banco, 'agencia': agencia, 'numero': numero}
-        #Criar dicionário
+    resposta = input('\nPossuí conta bancária? (S/N) ')
 
-        print('\nCadastrado com Sucesso!')
+    if (resposta.upper() == "S"):
+        banco = input("\nBanco: ")
+        agencia = input("Agência: ")
+        numero = input("Numero: ")
+        contaBancaria = {'banco': banco, 'agencia': agencia, 'numero': numero}
     else:
-        contabancaria = {}
-        print('\nCadastrado com Sucesso!')
+        contaBancaria = {}
 
-    dado = {'nome': nome, 'idade': idade, 'profissao': profissao, 'salario': salario, 'conta': contabancaria}
-    #Criar dicionário e adionar outro dicionario.
+    pessoa = {'nome': nome, 'idade': idade, 'profissao': profissao, 'salario': salario, 'conta': contaBancaria}
 
-    cliente.append(dado)
+    cliente.append(pessoa)
 
-    continuar = input("\nDeseja continuar? (S/N) ")
-    if continuar.upper() == "N":
+    continuar = input('\nDeseja continuar? (S/N): ')
+    
+    if (continuar.upper() == "N"):
         break
 
-for dado in cliente:
-    print(f"\nNome: {dado['nome']} | Idade: {dado['idade']} | Profissão: {dado['profissao']} | Salário: {dado['salario']}")
+print('\n<<----CLIENTES CADASTRADOS---->>')
 
-    if (contabancaria):
-        print(f"Banco: {contabancaria['banco']} | Agência: {contabancaria['agencia']} | Número: {contabancaria['numero']}")
+for pessoa in cliente:
+    print(f"\nNome: {pessoa['nome']} | Idade: {pessoa['idade']} | Profissão: {pessoa['profissao']} | Salário: {pessoa['salario']}")
+
+    if (contaBancaria):
+        print(f"Banco: {contaBancaria['banco']} | Agência: {contaBancaria['agencia']} | Número: {contaBancaria['numero']}")
     else:
-        print("Cliente não possui conta bancária.")
+        print("Cliente não possuí conta bancaria")
