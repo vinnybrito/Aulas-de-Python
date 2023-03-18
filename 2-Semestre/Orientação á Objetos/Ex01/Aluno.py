@@ -1,0 +1,41 @@
+class Aluno:
+    def __init__(self, id = '', nome = '', idade = 0, ra = '', curso = ''):
+        self.__id = id
+        self.__nome = nome
+        self.__idade = idade
+        self.__ra = ra
+        self.__curso = curso
+
+    #------------------------------GETTERS AND SETTERS------------------------------#
+
+    @property
+    def nome(self):
+        return self.__nome
+   
+    @nome.setter
+    def nome(self, nome):
+        self.__nome = nome
+
+    @property
+    def idade(self):
+        return self.__idade
+   
+    @idade.setter
+    def idade(self, idade):
+        self.__idade = idade
+
+    @property
+    def ra(self):
+        return self.__ra
+   
+    @nome.setter
+    def ra(self, ra):
+        self.__ra = ra
+    
+    @property
+    def curso(self):
+        return self.__curso
+   
+    @nome.setter
+    def curso(self, curso):
+        self.__curso = curso
