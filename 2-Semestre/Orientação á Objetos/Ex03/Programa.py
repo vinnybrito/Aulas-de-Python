@@ -3,7 +3,7 @@ from ContaBancaria import conta
 
 clientes = []
 
-print('<----Cadastro de Clientes---->>')
+print('<<--Cadastro de Clientes-->>')
 
 for i in range (1, 3, 1):
     cli = Cliente()
@@ -17,7 +17,7 @@ for i in range (1, 3, 1):
 
     if (possuiConta.upper() == "S"):
         c = conta()
-
+        
         c.agencia = input("Agência: ")
         c.numero = input("Número: ")
         c.saldo = float(input("Agência: "))

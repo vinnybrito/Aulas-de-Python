@@ -28,7 +28,7 @@ class Aluno:
     def ra(self):
         return self.__ra
    
-    @nome.setter
+    @ra.setter
     def ra(self, ra):
         self.__ra = ra
     
@@ -36,6 +36,6 @@ class Aluno:
     def curso(self):
         return self.__curso
    
-    @nome.setter
+    @curso.setter
     def curso(self, curso):
         self.__curso = curso

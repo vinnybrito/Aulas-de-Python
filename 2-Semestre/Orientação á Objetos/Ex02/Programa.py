@@ -5,7 +5,7 @@ import requests
 alunos = []
 
 while True:
-    print('<<--Cadastro de Alunos-->>')
+    print('\n<<----Cadastro de Alunos---->>')
 
     print('\nEscolha uma opção:')
     print('1- Incluir Aluno')
@@ -40,30 +40,43 @@ while True:
             informacoes = {'id': id, 'nome': aluno.nome, 'idade': aluno.idade, 'ra': aluno.ra, 'curso': aluno.curso, 'cep': aluno.cep, 'rua': aluno.rua, 'bairro': aluno.bairro, 'localidade': aluno.localidade, 'cidade': aluno.uf}
 
             alunos.append(informacoes)
+
     elif (opcao == 2):
+
+        print('\n<<----Alunos Cadastrados---->>')
+
         for informacoes in alunos:      
             print(f"ID: {informacoes['id']} | Nome: {informacoes['nome']}")
 
-        idPessoa = int(input('Digite o id do aluno que deseja atualizar: '))
+        idAluno = int(input('\nDigite o ID do aluno que deseja atualizar: '))
         nome = input('Digite o novo nome: ')
         idade = int(input('Digite a nova idade: '))
 
         for informacoes in alunos:
-            if (informacoes['id'] == idPessoa):
+            if (informacoes['id'] == idAluno):
                 informacoes.update({'nome': nome})
                 informacoes.update({'idade': idade})
+
     elif (opcao == 3):
+
+        print('\n<<----Alunos Cadastrados---->>')
+
         for informacoes in alunos:      
             print(f"\nID: {informacoes['id']} | Nome: {informacoes['nome']}")
 
-        idPessoa = int(input('Digite o id da pessoa que deseja excluir: '))
+        idAluno = int(input('Digite o ID da pessoa que deseja excluir: '))
 
         for informacoes in alunos:
-            if (informacoes['id'] == idPessoa):
+            if (informacoes['id'] == idAluno):
                 alunos.remove(informacoes)
+
     elif (opcao == 4):
+
+        print('\n<<----Alunos Cadastrados---->>')
+        
         for informacoes in alunos:      
-            print(f"\nID: {informacoes['id']} | Nome: {informacoes['nome']} | Rua: {informacoes['rua']} | Cidade: {informacoes['cidade']}")
+            print(f"\nID: {informacoes['id']} | Nome: {informacoes['nome']} | Idade: {informacoes['idade']} | Rua: {informacoes['rua']} | Bairro: {informacoes['bairro']} | Cidade: {informacoes['cidade']}")
+
     else:
         break
 
