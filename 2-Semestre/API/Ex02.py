@@ -13,7 +13,8 @@ url = f"https://api.github.com/users/{github}"
 response = requests.get(url)
 
 if response.status_code == 200:
-    dados = response.json()   
+    dados = response.json() 
+      
     print(f"\nNome: {dados['name']} | Repositórios: {dados['public_repos']} | Seguidores: {dados['followers']}")
 else:
     print("Perfil não encontrado.")

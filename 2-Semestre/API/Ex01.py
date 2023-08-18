@@ -12,7 +12,8 @@ url = f"https://viacep.com.br/ws/{cep}/json/"
 response = requests.get(url)
 
 if response.status_code == 200:
-    dados = response.json()   
+    dados = response.json()
+      
     print(f"\nLogradouro: {dados['logradouro']}")
     print(f"Bairro: {dados['bairro']}")
     print(f"Cidade: {dados['localidade']}")

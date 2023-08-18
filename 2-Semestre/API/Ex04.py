@@ -44,6 +44,7 @@ while True:
             clientes.append(pessoa)
 
             print('\nPessoa cadastrada com sucesso!')
+
     elif (opcao == 2):
         for pessoa in clientes:      
             print(f"ID: {pessoa['id']} | Nome: {pessoa['nome']}")
@@ -56,6 +57,7 @@ while True:
             if (pessoa['id'] == idPessoa):
                 pessoa.update({'nome': nome})
                 pessoa.update({'email': email})
+
     elif (opcao == 3):
         for pessoa in clientes:      
             print(f"ID: {pessoa['id']} | Nome: {pessoa['nome']}")
@@ -65,11 +67,13 @@ while True:
         for pessoa in clientes:
             if (pessoa['id'] == idPessoa):
                 clientes.remove(pessoa)  
+
     elif (opcao == 4):
         print("\n<<----CLIENTES CADASTRADOS---->>")
 
         for pessoa in clientes:
             print(f"\nID: {pessoa['id']} | Nome: {pessoa['nome']} | Rua: {pessoa['rua']} | Cidade: {pessoa['cidade']}")
+            
     else:
         break
 

@@ -1,6 +1,15 @@
 from Aluno import Aluno
 
 alunos = []
+id = 0
+
+def exibirAlunos(formatoCompleto = False):
+    if (formatoCompleto):
+        for aluno in alunos:      
+            print(f"\nID: {aluno.id} | Nome: {aluno.nome} | Idade: {aluno.idade} | RA: {aluno.ra} | Curso: {aluno.curso}")
+    else:
+        for aluno in alunos:      
+            print(f"ID: {aluno.id} | Nome: {aluno.nome}\n")
 
 while True:
     print('\n<<--Cadastro de Alunos-->>')
@@ -17,51 +26,48 @@ while True:
     if (opcao == 1):
         aluno = Aluno()
 
-        id = alunos.__len__() + 1
+        id = id + 1
+        aluno.id = id
         aluno.nome = input('Digite o seu nome: ')
         aluno.idade = input('Digite sua idade: ')
         aluno.ra = input('Digite seu RA: ')
         aluno.curso = input('Digite o nome do curso: ')
 
-        informacoes = {'id': id, 'nome': aluno.nome, 'idade': aluno.idade, 'ra': aluno.ra, 'curso': aluno.curso}
+        alunos.append(aluno)
 
-        alunos.append(informacoes)
+        print('Aluno cadastrado com sucesso!')
 
     elif (opcao == 2):
         print('\n<<----Alunos Cadastrados---->>')
 
-        for informacoes in alunos:      
-            print(f"ID: {informacoes['id']} | Nome: {informacoes['nome']}")
+        exibirAlunos()
 
         idAluno = int(input('\nDigite o ID do aluno que deseja atualizar: '))
 
         nome = input('Digite o novo nome: ')
         idade = int(input('Digite a nova idade: '))
         
-        for informacoes in alunos:
-            if (informacoes['id'] == idAluno):
-                informacoes.update({'nome': nome})
-                informacoes.update({'idade': idade})
+        for aluno in alunos:
+            if (aluno.id == idAluno):
+                aluno.nome = nome
+                aluno.idade = idade
 
     elif (opcao == 3):
         print('\n<<----Alunos Cadastrados---->>')
 
-        for informacoes in alunos:      
-            print(f"\nID: {informacoes['id']} | Nome: {informacoes['nome']}")
+        exibirAlunos()
 
         idAluno = int(input('\nDigite o ID do aluno que deseja excluir: '))
 
-        for informacoes in alunos:
-            if (informacoes['id'] == idAluno):
-                alunos.remove(informacoes)
+        for aluno in alunos:
+            if (aluno.id == idAluno):
+                alunos.remove(aluno)
 
     elif (opcao == 4):
 
         print('\n<<----Alunos Cadastrados---->>')
 
-        for informacoes in alunos:
-            print(f"\nID: {informacoes['id']} | Nome: {informacoes['nome']} | Idade: {informacoes['idade']} | RA: {informacoes['ra']} | Curso: {informacoes['curso']}")
-
+        exibirAlunos(True)
     else:
         break
 

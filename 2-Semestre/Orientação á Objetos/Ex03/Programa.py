@@ -1,33 +1,43 @@
 from Cliente import Cliente
-from ContaBancaria import conta
+from ContaBancaria import ContaBancaria
 
 clientes = []
 
-print('<<--Cadastro de Clientes-->>')
+for i in range(5):
+    if i != 0:
+        print("Digite os dados do próximo cliente")
 
-for i in range (1, 3, 1):
-    cli = Cliente()
+    id = i + 1
+    nome = input("Digite o nome do cliente: ")
+    idade = int(input("Digite a idade do cliente: "))
+    email = input("Digite o email do cliente: ")
 
-    id = cli.__len__() + 1
-    cli.nome = input('Digite seu nome: ')
-    cli.idade = int(input('Digite sua idade: '))
-    cli.email = input('Digite seu email: ')
+    cliente = Cliente(id, nome, idade, email)
+    resposta = input("O cliente tem conta bancária? (s/n) ")[0].lower()
 
-    possuiConta = input('Possuí conta Bancaria? (S/N) ')
-
-    if (possuiConta.upper() == "S"):
-        c = conta()
+    if resposta == "s":
+        agencia = input("Digite a agência da conta bancária: ")
+        numero = input("Digite o número da conta bancária: ")
+        saldo = float(input("Digite o saldo da conta bancária: "))
         
-        c.agencia = input("Agência: ")
-        c.numero = input("Número: ")
-        c.saldo = float(input("Agência: "))
+        conta_bancaria = ContaBancaria(agencia, numero, saldo)
+        cliente.adicionar_conta_bancaria(conta_bancaria)
+    clientes.append(cliente)
 
-        cli.append(c)
+# Exibir todos os clientes e suas respectivas contas bancárias, se houver
+for cliente in clientes:
+    print("Id: ", cliente.id)
+    print("Nome: ", cliente.nome)
+    print("Idade: ", cliente.idade)
+    print("Email: ", cliente.email)
+    conta_bancaria = cliente.conta_bancaria
+
+    if conta_bancaria is not None:
+        print("Agência: ", conta_bancaria.agencia)
+        print("Número: ", conta_bancaria.numero)
+        print("Saldo: ", conta_bancaria.saldo)
+
     else:
-        cli.append()
+        print("Cliente não possui conta bancária.")
 
-    clientes.append(cli)
-
-
-
-        
+    print()

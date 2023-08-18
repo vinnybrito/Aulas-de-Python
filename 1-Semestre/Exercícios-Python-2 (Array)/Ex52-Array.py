@@ -13,5 +13,4 @@ for valor in valores:
         maior = valor
 
 print("Maior valor:", maior)
-+
 

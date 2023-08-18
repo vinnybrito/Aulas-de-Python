@@ -1,4 +1,4 @@
-clientes=[]
+clientes = []
 emails = set()
 
 print('Cadastro de Clientes')
@@ -34,6 +34,7 @@ while(True):
         cliente = [nome, email, idade, conta]
 
         clientes.append(cliente)
+        
     elif (opcao == 2):
         for cli in clientes:
             print(f'Nome: {cli[0]} - Email: {cli[1]} - Idade: {cli[2]}' )

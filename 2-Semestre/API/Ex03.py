@@ -24,5 +24,5 @@ response = requests.get(url)
 if response.status_code == 200:
     dados = response.json()
     
-    valorConvertido = valor / float(dados[moedas[opcao]+"BRL"]['ask'])
+    valorConvertido = valor / float(dados[moedas[opcao] + "BRL"]['ask'])
     print(f"O valor convertido é: {valorConvertido:.2f}")
